@@ -5,6 +5,7 @@ use App\Http\Controllers\DosenController;
 use App\Http\Controllers\BlogController;
 use App\Http\Controllers\PegawaiController;
 use App\Http\Controllers\PegawaiDBController;
+use App\Http\Controllers\MejaDBController;
 
 Route::get('/', function () {
     return view('welcome');
@@ -73,3 +74,12 @@ Route::get('/pegawai/edit/{id}',[PegawaiDBController::class, 'edit']);
 Route::post('/pegawai/update',[PegawaiDBController::class, 'update']);
 Route::get('/pegawai/hapus/{id}',[PegawaiDBController::class, 'hapus']);
 Route::get('/pegawai/cari',[PegawaiDBController::class, 'cari']);
+
+
+Route::get('/meja', [MejaDBController::class, 'indexMeja']);
+Route::get('/meja/tambah_meja', [MejaDBController::class, 'tambah_meja']);
+Route::post('/meja/store_meja', [MejaDBController::class, 'store_meja']);
+Route::get('/meja/edit_meja/{id}', [MejaDBController::class, 'edit_meja']);
+Route::post('/meja/update_meja', [MejaDBController::class, 'update_meja']);
+Route::get('/meja/hapus_meja/{id}', [MejaDBController::class, 'hapus_meja']);
+Route::get('/meja/cari_meja', [MejaDBController::class, 'cari_meja']);
