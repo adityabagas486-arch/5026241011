@@ -96,3 +96,11 @@ Route::post('/siswa', [SiswaController::class, 'store'])->name('siswa.store');
 Route::get('/siswa/{nrp}/edit', [SiswaController::class, 'edit'])->name('siswa.edit');
 Route::put('/siswa/{nrp}', [SiswaController::class, 'update'])->name('siswa.update');
 Route::delete('/siswa/{nrp}', [SiswaController::class, 'destroy'])->name('siswa.destroy');
+
+
+use App\Http\Controllers\KeranjangBelanjaDBController;
+
+Route::get('/keranjangbelanja', [KeranjangBelanjaDBController::class, 'indexKeranjangBelanja'])->name('keranjangbelanja.index');
+Route::get('/keranjangbelanja/tambah', [KeranjangBelanjaDBController::class, 'tambahKeranjangBelanja'])->name('tambahKeranjangBelanja');
+Route::post('/keranjangbelanja/store', [KeranjangBelanjaDBController::class, 'storeKeranjangBelanja'])->name('keranjangbelanja.store');
+Route::get('/keranjangbelanja/hapus/{id}', [KeranjangBelanjaDBController::class, 'hapusKeranjangBelanja'])->name('keranjangbelanja.hapus');
