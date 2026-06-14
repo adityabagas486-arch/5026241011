@@ -110,3 +110,22 @@ use App\Http\Controllers\nilaikuliah;
 Route::get('/nilaikuliah', [nilaikuliah::class, 'index2'])->name('nilaikuliah.index');
 Route::get('/nilaikuliah/tambah', [nilaikuliah::class, 'tambah'])->name('nilaikuliah.tambah');
 Route::post('/nilaikuliah/store', [nilaikuliah::class, 'store'])->name('nilaikuliah.store');
+
+use App\Http\Controllers\parkir;
+
+Route::get('/parkir', [parkir::class, 'index2'])->name('parkir.index');
+Route::get('/parkir/tambah', [parkir::class, 'tambah'])->name('parkir.tambah');
+Route::post('/parkir/store', [parkir::class, 'store'])->name('parkir.store');
+Route::get('/parkir/edit/{id}', [parkir::class, 'edit'])->name('parkir.edit');
+Route::post('/parkir/update', [parkir::class, 'update'])->name('parkir.update');
+Route::get('/parkir/hapus/{id}', [parkir::class, 'hapus'])->name('parkir.destroy');
+
+
+use App\Http\Controllers\siperpus;
+
+Route::get('/siperpus', [siperpus::class, 'index2'])->name('siperpus.index');
+Route::get('/siperpus/tambah', [siperpus::class, 'tambah'])->name('siperpus.tambah');
+Route::post('/siperpus/store', [siperpus::class, 'store'])->name('siperpus.store');
+Route::get('/siperpus/edit/{id}', [siperpus::class, 'edit'])->name('siperpus.edit');
+Route::post('/siperpus/update', [siperpus::class, 'update'])->name('siperpus.update');
+Route::get('/siperpus/hapus/{id}', [siperpus::class, 'hapus'])->name('siperpus.destroy');
