@@ -104,3 +104,9 @@ Route::get('/keranjangbelanja', [KeranjangBelanjaDBController::class, 'indexKera
 Route::get('/keranjangbelanja/tambah', [KeranjangBelanjaDBController::class, 'tambahKeranjangBelanja'])->name('tambahKeranjangBelanja');
 Route::post('/keranjangbelanja/store', [KeranjangBelanjaDBController::class, 'storeKeranjangBelanja'])->name('keranjangbelanja.store');
 Route::get('/keranjangbelanja/hapus/{id}', [KeranjangBelanjaDBController::class, 'hapusKeranjangBelanja'])->name('keranjangbelanja.hapus');
+
+use App\Http\Controllers\nilaikuliah;
+
+Route::get('/nilaikuliah', [nilaikuliah::class, 'index2'])->name('nilaikuliah.index');
+Route::get('/nilaikuliah/tambah', [nilaikuliah::class, 'tambah'])->name('nilaikuliah.tambah');
+Route::post('/nilaikuliah/store', [nilaikuliah::class, 'store'])->name('nilaikuliah.store');

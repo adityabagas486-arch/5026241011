@@ -30,13 +30,13 @@
                         <a class="nav-link" href="/siswa">Siswa</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link disabled" href="#">D4</a>
+                        <a class="nav-link" href="/keranjangbelanja">D4</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link disabled" href="#">Latihan 2</a>
+                        <a class="nav-link" href="/nilaikuliah">E5</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link disabled" href="#">EAS</a>
+                        <a class="nav-link" href="#">EAS</a>
                     </li>
                 </ul>
             </div>
